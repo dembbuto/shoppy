@@ -6,6 +6,6 @@ export async function uploadImage(file) {
     method: 'POST',
     body: data,
   })
-    .then((response) => response.json())
+    .then((res) => res.json())
     .then((data) => data.url);
 }
